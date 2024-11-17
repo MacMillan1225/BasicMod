@@ -1,9 +1,10 @@
 package tentianqinyin;
 
+import basemod.AutoAdd;
 import basemod.BaseMod;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
-import basemod.interfaces.PostInitializeSubscriber;
+import basemod.interfaces.*;
+import tentianqinyin.cards.BaseCard;
+import tentianqinyin.character.TenTianQinYin;
 import tentianqinyin.util.GeneralUtils;
 import tentianqinyin.util.KeywordInfo;
 import tentianqinyin.util.TextureLoader;
@@ -29,6 +30,8 @@ import java.util.*;
 
 @SpireInitializer
 public class BasicMod implements
+        EditCardsSubscriber,
+        EditCharactersSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         PostInitializeSubscriber {
@@ -47,6 +50,8 @@ public class BasicMod implements
     //This will be called by ModTheSpire because of the @SpireInitializer annotation at the top of the class.
     public static void initialize() {
         new BasicMod();
+
+        TenTianQinYin.Meta.registerColor();
     }
 
     public BasicMod() {
@@ -218,5 +223,18 @@ public class BasicMod implements
         else {
             throw new RuntimeException("Failed to determine mod info/ID based on initializer.");
         }
+    }
+
+    @Override
+    public void receiveEditCharacters() {
+        TenTianQinYin.Meta.registerCharacter();
+    }
+
+    @Override
+    public void receiveEditCards() {
+        new AutoAdd(modID) //Loads files from this mod
+                .packageFilter(BaseCard.class) //In the same package as this class
+                .setDefaultSeen(true) //And marks them as seen in the compendium
+                .cards(); //Adds the cards
     }
 }

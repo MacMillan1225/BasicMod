@@ -8,5 +8,13 @@
       "If you need to use it for stuff.",
       "Blizzard is a good example for this."
     ]
+  },
+  "${modID}:BasicPerformance": {
+    "NAME": "基础表演",
+    "DESCRIPTION": "造成 !D! 点伤害"
+  },
+  "${modID}:BasicExpressive": {
+    "NAME": "基础表现力",
+    "DESCRIPTION": "造成 !B! 点格挡"
   }
 }
