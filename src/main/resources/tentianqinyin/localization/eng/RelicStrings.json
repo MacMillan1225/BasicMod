@@ -5,5 +5,12 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  },
+  "${modID}:Rational": {
+    "NAME": "理性",
+    "FLAVOR": "我永远喜欢藤田琴音！",
+    "DESCRIPTIONS": [
+      "你的行动点无限，但使用卡片后会损失对应能量的体力\n你不会再失去格挡"
+    ]
   }
 }

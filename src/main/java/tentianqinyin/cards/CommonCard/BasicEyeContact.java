@@ -1,11 +1,10 @@
 package tentianqinyin.cards.CommonCard;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import tentianqinyin.cards.BaseCard;
 import tentianqinyin.character.TenTianQinYin;
@@ -34,6 +33,11 @@ public class BasicEyeContact extends BaseCard {
 
         setBlock(BLOCK, UPG_BLOCK); //Sets the card's damage and how much it changes when upgraded.
         setCustomVar("IN", IMPRESSIVE, UPG_IMPRESSIVE);
+        colorCustomVar("IN",
+                Settings.GREEN_TEXT_COLOR,
+                Settings.PURPLE_COLOR,
+                Settings.PURPLE_COLOR,
+                Settings.GREEN_TEXT_COLOR);
     }
 
     @Override

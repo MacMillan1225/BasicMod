@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.blue.Defend_Blue;
 import com.megacrit.cardcrawl.cards.green.Neutralize;
+import com.megacrit.cardcrawl.cards.red.Barricade;
 import com.megacrit.cardcrawl.cards.red.Strike_Red;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -21,7 +22,9 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
+import com.megacrit.cardcrawl.relics.Calipers;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import tentianqinyin.relics.origin.Rational;
 
 import java.util.ArrayList;
 
@@ -34,7 +37,7 @@ public class TenTianQinYin extends CustomPlayer {
     public static final int MAX_HP = 70;
     public static final int STARTING_GOLD = 99;
     public static final int CARD_DRAW = 5;
-    public static final int ORB_SLOTS = 99;
+    public static final int ORB_SLOTS = 0;
 
     //Strings
     private static final String ID = makeID("tentianqinyin"); //This should match whatever you have in the CharacterStrings.json file
@@ -144,6 +147,7 @@ public class TenTianQinYin extends CustomPlayer {
         retVal.add(Defend_Blue.ID);
         retVal.add(Defend_Blue.ID);
         retVal.add(Neutralize.ID);
+        retVal.add(Barricade.ID);
 
         return retVal;
     }
@@ -152,7 +156,7 @@ public class TenTianQinYin extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
+        retVal.add(Rational.ID);
 
         return retVal;
     }
