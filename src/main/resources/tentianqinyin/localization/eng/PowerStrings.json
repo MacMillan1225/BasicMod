@@ -4,5 +4,12 @@
     "DESCRIPTIONS": [
       "You are Very Cool and Strong."
     ]
+  },
+  "${modID}:Impressive": {
+    "NAME": "好印象",
+    "DESCRIPTIONS": [
+      "回合结束时造成",
+      "点伤害"
+    ]
   }
 }

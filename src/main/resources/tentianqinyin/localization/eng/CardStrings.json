@@ -15,6 +15,10 @@
   },
   "${modID}:BasicExpressive": {
     "NAME": "基础表现力",
-    "DESCRIPTION": "造成 !B! 点格挡"
+    "DESCRIPTION": "生成 !B! 点格挡"
+  },
+  "${modID}:BasicEyeContact": {
+    "NAME": "基础眼神",
+    "DESCRIPTION": "生成 !B! 点格挡，增加 !${modID}:IN! 层“好印象”"
   }
 }
