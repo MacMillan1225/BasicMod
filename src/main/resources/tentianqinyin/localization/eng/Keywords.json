@@ -26,6 +26,6 @@
       "好印象",
       "Impressivedes"
     ],
-    "DESCRIPTION": "回合结束时造成本效果层数的伤害"
+    "DESCRIPTION": "回合结束时造成本效果层数的伤害，回合结束后减少一层"
   }
 ]

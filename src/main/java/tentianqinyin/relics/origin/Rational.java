@@ -2,6 +2,7 @@ package tentianqinyin.relics.origin;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -11,6 +12,7 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BarricadePower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import tentianqinyin.character.TenTianQinYin;
+import tentianqinyin.powers.Impressive;
 import tentianqinyin.relics.BaseRelic;
 
 import static tentianqinyin.BasicMod.makeID;
@@ -30,6 +32,14 @@ public class Rational extends BaseRelic {
     @Override
     public void atTurnStart() {
         boolean powerExists = false;
+
+        for(AbstractPower pow : AbstractDungeon.player.powers) {
+            if (pow.ID.equals("tentianqinyin:Impressive")) {
+                addToBot(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, pow, 1));
+                break;
+            }
+        }
+
         for(AbstractPower pow : AbstractDungeon.player.powers) {
             if (pow.ID.equals("Barricade")) {
                 powerExists = true;
