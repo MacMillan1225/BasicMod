@@ -20,5 +20,9 @@
   "${modID}:BasicEyeContact": {
     "NAME": "基础眼神",
     "DESCRIPTION": "获得 !B! 点格挡，增加 !${modID}:IN! 层 ${modID}:好印象"
+  },
+  "${modID}:BasicPosture": {
+    "NAME": "基础姿势",
+    "DESCRIPTION": "获得 !B! 点格挡，造成 !D! 点伤害"
   }
 }
