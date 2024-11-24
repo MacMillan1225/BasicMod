@@ -24,5 +24,10 @@
   "${modID}:BasicPosture": {
     "NAME": "基础姿势",
     "DESCRIPTION": "获得 !B! 点格挡，造成 !D! 点伤害"
+  },
+  "${modID}:ChangeEmotion": {
+    "NAME": "转换心情",
+    "DESCRIPTION": "造成等同于格挡值 NL (!D!) 的伤害， NL 消耗",
+    "UPGRADE_DESCRIPTION": "造成等同格挡值 NL [#7fff00]1.1[] 倍 (!D!) 的伤害， NL 消耗"
   }
 }
