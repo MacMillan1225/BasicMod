@@ -39,6 +39,7 @@ public class BasicPerformance extends BaseCard {
                 new DamageInfo(p,
                 damage,
                 DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+
     }
 
 

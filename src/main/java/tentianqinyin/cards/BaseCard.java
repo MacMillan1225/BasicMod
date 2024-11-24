@@ -3,6 +3,7 @@ package tentianqinyin.cards;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import basemod.abstracts.DynamicVariable;
+import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import tentianqinyin.BasicMod;
 import tentianqinyin.util.CardStats;
 import tentianqinyin.util.TriFunction;
