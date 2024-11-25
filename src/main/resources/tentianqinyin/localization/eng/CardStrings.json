@@ -19,7 +19,7 @@
   },
   "${modID}:BasicEyeContact": {
     "NAME": "基础眼神",
-    "DESCRIPTION": "获得 !B! 点格挡，增加 !${modID}:IN! 层 ${modID}:好印象"
+    "DESCRIPTION": "获得 !B! 点格挡，获得 !${modID}:IN! 层 ${modID}:好印象"
   },
   "${modID}:BasicPosture": {
     "NAME": "基础姿势",
@@ -29,5 +29,15 @@
     "NAME": "转换心情",
     "DESCRIPTION": "造成等同于格挡值 NL (!D!) 的伤害， NL 消耗",
     "UPGRADE_DESCRIPTION": "造成等同格挡值 NL [#7fff00]1.1[] 倍 (!D!) 的伤害， NL 消耗"
+  },
+  "${modID}:CuteGesture": {
+    "NAME": "可爱手势",
+    "DESCRIPTION": "获得 !${modID}:IN! 层 ${modID}:好印象， NL 造成等同于格挡值 NL (!D!) 的伤害 NL 消耗",
+    "UPGRADE_DESCRIPTION": "获得 !${modID}:IN! 层 ${modID}:好印象 ， NL 造成等同于格挡值 NL [#7fff00]1.2[]倍(!D!) 的伤害 NL 消耗"
+  },
+  "${modID}:Morning": {
+    "NAME": "早安",
+    "DESCRIPTION": "造成 !D! 点伤害，获得 !${modID}:IN! 层 ${modID}:好印象",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得 !${modID}:IN! 层 ${modID}:好印象"
   }
 }
